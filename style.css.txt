@@ -1,0 +1,59 @@
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background: #0a0a0a;
+    color: white;
+}
+
+header {
+    text-align: center;
+    padding: 60px;
+}
+
+.logo {
+    font-family: 'Playfair Display', serif;
+    color: gold;
+    font-size: 42px;
+}
+
+nav {
+    text-align: center;
+    background: black;
+    padding: 10px;
+}
+
+nav a {
+    color: gold;
+    margin: 10px;
+    text-decoration: none;
+}
+
+section {
+    padding: 40px;
+    text-align: center;
+}
+
+.card {
+    background: #111;
+    padding: 20px;
+    margin: 10px;
+    border-radius: 8px;
+}
+
+.btn {
+    background: gold;
+    color: black;
+    padding: 12px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.whatsapp {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: green;
+    padding: 15px;
+    border-radius: 50%;
+    color: white;
+}
