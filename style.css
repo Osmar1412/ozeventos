@@ -7,7 +7,7 @@ body {
 
 /* ANIMAÇÃO */
 .fade {
-    animation: fadeIn 1.5s ease;
+    animation: fadeIn 1.2s ease;
 }
 
 @keyframes fadeIn {
@@ -15,6 +15,7 @@ body {
     to {opacity: 1; transform: translateY(0);}
 }
 
+/* HEADER */
 header {
     text-align: center;
     padding: 80px 20px;
@@ -26,6 +27,7 @@ header {
     font-size: 48px;
 }
 
+/* MENU */
 nav {
     text-align: center;
     background: black;
@@ -38,12 +40,13 @@ nav a {
     text-decoration: none;
 }
 
+/* SEÇÕES */
 section {
     padding: 50px;
     text-align: center;
 }
 
-/* CARDS */
+/* SERVIÇOS */
 .grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
@@ -71,7 +74,13 @@ section {
     text-decoration: none;
 }
 
-/* GALERIA */
+/* EVENTOS */
+#eventos h2 {
+    margin-top: 40px;
+    color: gold;
+}
+
+/* GALERIA DE IMAGENS */
 .galeria {
     display: flex;
     flex-wrap: wrap;
@@ -79,7 +88,7 @@ section {
 }
 
 .galeria img {
-    width: 300px;
+    width: 280px;
     margin: 10px;
     border-radius: 10px;
     transition: 0.3s;
@@ -89,14 +98,26 @@ section {
     transform: scale(1.05);
 }
 
-/* VIDEO */
+/* VÍDEOS */
+.video {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
 .video iframe {
-    width: 80%;
-    height: 400px;
+    width: 300px;
+    height: 200px;
+    margin: 10px;
     border-radius: 10px;
 }
 
-/* CONTATO PROFISSIONAL */
+/* BLOCO DE EVENTO */
+#eventos div {
+    margin-bottom: 50px;
+}
+
+/* FORMULÁRIO PROFISSIONAL */
 .contato form {
     max-width: 500px;
     margin: auto;
@@ -120,6 +141,11 @@ button {
     width: 100%;
     font-weight: bold;
     cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    background: #e6c200;
 }
 
 /* WHATSAPP */
@@ -131,9 +157,10 @@ button {
     padding: 15px;
     border-radius: 50%;
     color: white;
+    font-size: 20px;
 }
 
-/* FOOTER */
+/* RODAPÉ */
 footer {
     text-align: center;
     padding: 20px;
