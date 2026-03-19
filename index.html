@@ -12,7 +12,7 @@
 
 <body>
 
-<header>
+<header class="fade">
     <h1 class="logo">Oz Eventos</h1>
     <p>Transformando momentos em experiências inesquecíveis ✨</p>
     <a href="https://wa.me/5511947685370" class="btn">Solicitar Orçamento</a>
@@ -21,38 +21,62 @@
 <nav>
     <a href="#sobre">Sobre</a>
     <a href="#servicos">Serviços</a>
+    <a href="#galeria">Eventos</a>
     <a href="#contato">Contato</a>
 </nav>
 
-<section id="sobre">
+<section id="sobre" class="fade">
     <h2>Sobre Nós</h2>
     <p>
-        A Oz Eventos é especializada em eventos de alto padrão,
-        cuidando de cada detalhe para tornar seu momento inesquecível.
+        Especialistas em eventos de alto padrão, cuidamos de cada detalhe
+        para transformar seu sonho em realidade.
     </p>
 </section>
 
-<section id="servicos">
+<section id="servicos" class="fade">
     <h2>Serviços</h2>
 
-    <div class="card">💍 Casamentos</div>
-    <div class="card">👑 Festa de 15 anos</div>
-    <div class="card">🎉 Bodas</div>
-    <div class="card">🏢 Corporativo</div>
+    <div class="grid">
+        <div class="card">💍 Casamentos</div>
+        <div class="card">👑 Festa de 15 anos</div>
+        <div class="card">🎉 Bodas</div>
+        <div class="card">🏢 Corporativo</div>
+    </div>
+</section>
+
+<!-- GALERIA POR EVENTOS -->
+<section id="galeria" class="fade">
+    <h2>Eventos Realizados</h2>
+
+    <h3>💍 Casamento - João & Maria</h3>
+    <div class="galeria">
+        <img src="https://images.unsplash.com/photo-1519741497674-611481863552">
+        <img src="https://images.unsplash.com/photo-1522673607200-164d1b6ce486">
+        <img src="https://images.unsplash.com/photo-1505236858219-8359eb29e329">
+    </div>
+
+    <h3>👑 Festa de 15 anos - Ana</h3>
+    <div class="galeria">
+        <img src="https://images.unsplash.com/photo-1529634895846-0c0c0f8b5b3d">
+        <img src="https://images.unsplash.com/photo-1511285560929-80b456fea0bc">
+    </div>
+
+    <!-- VÍDEO -->
+    <h3>🎥 Vídeo do Evento</h3>
+    <div class="video">
+        <iframe src="https://www.youtube.com/embed/tgbNymZ7vqY" allowfullscreen></iframe>
+    </div>
 
 </section>
 
-<section id="contato">
-    <h2>Contato</h2>
-
-    <p>📱 WhatsApp: (11) 9 4768-5370</p>
-    <p>📧 Email: osmar.dj.oz@gmail.com</p>
+<section id="contato" class="fade contato">
+    <h2>Solicite um Orçamento</h2>
 
     <form action="https://formsubmit.co/osmar.dj.oz@gmail.com" method="POST">
         <input type="text" name="name" placeholder="Seu nome" required>
         <input type="email" name="email" placeholder="Seu email" required>
-        <textarea name="message" placeholder="Mensagem" required></textarea>
-        <button type="submit">Enviar</button>
+        <textarea name="message" placeholder="Conte sobre seu evento..." required></textarea>
+        <button type="submit">Enviar Mensagem</button>
     </form>
 
 </section>
