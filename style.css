@@ -5,55 +5,137 @@ body {
     color: white;
 }
 
+/* ANIMAÇÃO */
+.fade {
+    animation: fadeIn 1.5s ease;
+}
+
+@keyframes fadeIn {
+    from {opacity: 0; transform: translateY(20px);}
+    to {opacity: 1; transform: translateY(0);}
+}
+
 header {
     text-align: center;
-    padding: 60px;
+    padding: 80px 20px;
 }
 
 .logo {
     font-family: 'Playfair Display', serif;
     color: gold;
-    font-size: 42px;
+    font-size: 48px;
 }
 
 nav {
     text-align: center;
     background: black;
-    padding: 10px;
+    padding: 15px;
 }
 
 nav a {
     color: gold;
-    margin: 10px;
+    margin: 15px;
     text-decoration: none;
 }
 
 section {
-    padding: 40px;
+    padding: 50px;
     text-align: center;
+}
+
+/* CARDS */
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
 }
 
 .card {
     background: #111;
-    padding: 20px;
-    margin: 10px;
-    border-radius: 8px;
+    padding: 25px;
+    border-radius: 10px;
+    transition: 0.3s;
 }
 
+.card:hover {
+    transform: scale(1.05);
+    background: #1a1a1a;
+}
+
+/* BOTÃO */
 .btn {
     background: gold;
     color: black;
     padding: 12px 20px;
-    text-decoration: none;
     border-radius: 5px;
+    text-decoration: none;
 }
 
+/* GALERIA */
+.galeria {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.galeria img {
+    width: 300px;
+    margin: 10px;
+    border-radius: 10px;
+    transition: 0.3s;
+}
+
+.galeria img:hover {
+    transform: scale(1.05);
+}
+
+/* VIDEO */
+.video iframe {
+    width: 80%;
+    height: 400px;
+    border-radius: 10px;
+}
+
+/* CONTATO PROFISSIONAL */
+.contato form {
+    max-width: 500px;
+    margin: auto;
+    background: #111;
+    padding: 30px;
+    border-radius: 10px;
+}
+
+input, textarea {
+    width: 100%;
+    margin: 10px 0;
+    padding: 12px;
+    border-radius: 5px;
+    border: none;
+}
+
+button {
+    background: gold;
+    border: none;
+    padding: 15px;
+    width: 100%;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+/* WHATSAPP */
 .whatsapp {
     position: fixed;
     bottom: 20px;
     right: 20px;
-    background: green;
+    background: #25D366;
     padding: 15px;
     border-radius: 50%;
     color: white;
+}
+
+/* FOOTER */
+footer {
+    text-align: center;
+    padding: 20px;
+    background: black;
 }
