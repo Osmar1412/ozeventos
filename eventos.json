@@ -1,0 +1,18 @@
+{
+  "servicos": [
+    {
+      "nome": "Casamentos",
+      "eventos": [
+        {
+          "titulo": "Casamento João & Maria",
+          "fotos": [
+            "https://images.unsplash.com/photo-1519741497674-611481863552"
+          ],
+          "videos": [
+            "https://www.youtube.com/embed/tgbNymZ7vqY"
+          ]
+        }
+      ]
+    }
+  ]
+}
